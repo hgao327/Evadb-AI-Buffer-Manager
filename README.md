@@ -1,6 +1,22 @@
 # Evadb-AI-Buffer-Manager
 EvaDB offers an AI-integrated database solution, while LocalAI enables high-speed execution of AI models locally. Combining these technologies, we propose the development of an AI-Buffer-Manager designed to optimize caching strategies by intelligently analyzing user behavior and data access patterns, thereby improving the overall performance of database systems.
 
+## - 💻 Environment Set:
+
+### To use LocalAI, set the docker environment:
+
+https://localai.io/howtos/easy-setup-docker-cpu/
+### Register the model from LocalAI:
+
+https://localai.io/features/BufferManager/
+
+For Example
+```bash
+curl http://localhost:8080/models/apply -H "Content-Type: application/json" -d '{
+  "url": "github:go-skynet/model-gallery/XXX.yaml"
+}'
+```
+
 ### Structure:
 
 <img width="695" alt="Screenshot 2023-11-25 at 8 16 53 PM" src="https://github.com/hgao327/Evadb-AI-Buffer-Manager/assets/108708761/af529ad2-c509-4983-a0eb-548998e7a3b0">
