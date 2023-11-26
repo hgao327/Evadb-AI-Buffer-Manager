@@ -163,19 +163,19 @@ def test_cache_strategy(cache_class, capacity, requests):
 
 # Test FIFO Strategy
 fifo_hit_rate = test_cache_strategy(FIFOCache, 100, requests)
-print(f"FIFO Hit rate: {fifo_hit_rate + 0.03:.4f}")
+print(f"FIFO Hit rate: {fifo_hit_rate:.4f}")
 
 # Test Random Strategy
 random_hit_rate = test_cache_strategy(RandomCache, 100, requests)
-print(f"Random Hit rate: {random_hit_rate + 0.05:.4f}")
+print(f"Random Hit rate: {random_hit_rate:.4f}")
 
 # Test LFU Strategy
 lfu_hit_rate = test_cache_strategy(LFUCache, 100, requests)
-print(f"LFU Hit rate: {lfu_hit_rate + 0.1:.4f}")
+print(f"LFU Hit rate: {lfu_hit_rate:.4f}")
 
 # Test LRU Strategy
 lru_hit_rate = test_cache_strategy(LRUCache, 100, requests)
-print(f"LRU Hit rate: {lru_hit_rate + 0.08:.4f}")
+print(f"LRU Hit rate: {lru_hit_rate:.4f}")
 
 # Test MRU Strategy
 mru_hit_rate = test_cache_strategy(MRUCache, 100, requests)
@@ -184,6 +184,3 @@ print(f"MRU Hit rate: {mru_hit_rate:.4f}")
 # Test SHiP Strategy
 ship_hit_rate = test_cache_strategy(SHiPCache, 100, requests)
 print(f"SHiP Hit rate: {ship_hit_rate:.4f}")
-
-
-print(f"EvaDB AI-Manager Hit rate: {ship_hit_rate+0.22:.4f}")
